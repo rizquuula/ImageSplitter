@@ -1,0 +1,21 @@
+<html>
+    <head><title>UPLOADER</title></head>
+    <body>
+        <a href="/beranda">HOME</a>
+        -
+        {{ user }}
+        </br>
+        <H1>Image Splitter 0.0</H1>
+        <b>PILIH GAMBAR</b>
+        <form method=post enctype=multipart/form-data>
+            <input type=file name=file></br></br>
+            <!-- <input type=submit value=Upload></br></br> -->
+            <b>POTONG BERAPA BAGIAN?</b></br>
+            <label for="fname">Sumbu X : </label>
+            <input type="number" min="1" max="100" step="1" value="3" name=countX /></br>
+            <label for="fname">Sumbu Y : </label>
+            <input type="number" min="1" max="100" step="1" value="1" name=countY /></br></br>
+            <input type="submit" value="Upload">
+        </form>
+    </body>
+</html>

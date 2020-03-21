@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>AiDesign (Beta) - Welcome Page</title>
+    </head>
+    <body>
+        <h3>Hallo... Assalamu'alaikum ^^</h3>
+        <p>Tolong masukin nama dulu yaa..</p>
+        <br>
+        <form action={{ url_for('homepage') }}  method="post" >
+            <label for="fname">Namamu:</label>
+            <input type="text" id="namaPengguna" name="userActive" required="required">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

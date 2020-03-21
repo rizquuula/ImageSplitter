@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <a href="/beranda">HOME</a>
+        -
+        <a href="/imageSplitter">IMAGE SPLITTER</a>
+        -
+        <a href="/logout">LOGOUT</a>
+        -
+        {{ user }}
+        <ul>
+            {% for file in files %}
+            <li><a href="/static/User/{{ user }}/ImageSplitter/{{ saveTime }}/{{ file }}">{{ file }}</a></li>
+            <li><img src="/static/User/{{ user }}/ImageSplitter/{{ saveTime }}/{{ file }}"></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
